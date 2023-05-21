@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="header.css">
+</head>
+
+<body>
+    <header id="ans-header">
+        <nav class="ans-navbar">
+            <!-- hamburger lines -->
+            <div class="ans-hamburger">
+                <span class="ans-bar"></span>
+                <span class="ans-bar"></span>
+                <span class="ans-bar"></span>
+            </div>
+
+            <!-- logo -->
+            <a id="ans-logo-link" href="index.html"><img src="logo.svg" width="120" alt=""></a>
+            <ul class="ans-nav-menu">
+                
+                <li class="ans-nav-item"><input type="text" placeholder="Search"><button>
+                    <img src="https://www.freepnglogos.com/uploads/search-png/search-icon-clip-art-clkerm-vector-clip-art-online-0.png" width="20" alt="search" />
+                </button></li>
+                <li class="ans-nav-item"><h3><a href="index.html">Menu</a></h3></li>
+                <li class="ans-nav-item"><h3><a href="index.html">About Us</a></h3></li>
+                <li class="ans-nav-item"><h3><a href="index.html">Contact</a></h3></li>
+            </ul>
+
+            <!-- <div id="ans-header-right"> -->
+                <!-- social images -->
+                <div id="ans-social-logos">
+                    <img src="https://www.freepnglogos.com/uploads/facebook-logo-icon/facebook-logo-icon-file-facebook-icon-svg-wikimedia-commons-4.png"
+                        width="30" alt="Facebook Symbol" />
+                    <img src="https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-instagram-new-logo-vector-download-13.png"
+                        width="30" alt="logo ig, instagram new logo vector download" />
+                </div>
+
+                <!-- login and cart -->
+                <div style="display: flex;" id="ans-login-cart-container">
+                    <div id="ans-login-btn-container">
+                        <button id="ans-login-btn">Login</button>
+                    </div>
+                    <div id="ans-login-cart-container">
+                        <img src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-trolley-images-pixabay-download-pictures-14.png"
+                            width="30" alt="shopping cart" />
+                    </div>
+                </div>
+            <!-- </div> -->
+
+        </nav>
+    </header>
+</body>
+<script>
+    const hamburger = document.querySelector(".ans-hamburger");
+    const navMenu = document.querySelector(".ans-nav-menu");
+
+    hamburger.addEventListener("click", function () {
+        navMenu.classList.toggle("active")
+        hamburger.classList.toggle("active")
+    })
+</script>
+
+</html>

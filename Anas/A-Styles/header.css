@@ -1,0 +1,139 @@
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+
+
+
+
+
+#ans-header {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    /* margin: -10px;
+    margin-bottom: 10px;
+    padding: -10px;
+    padding-bottom: 10px; */
+}
+
+.ans-navbar li {
+    list-style: none;
+}
+
+#ans-header a {
+    text-decoration: none;
+    color: #262626;
+}
+
+.ans-navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+.ans-nav-item input{
+    border: none;
+    border-bottom: 1px solid #262626;
+    outline: none;
+    padding: 5px;
+    width: 100px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.ans-nav-item button{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.ans-nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.ans-hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.ans-bar {
+    display: block;
+    height: 3px;
+    width: 25px;
+    margin: 5px auto;
+    background-color: #262626;
+}
+
+
+#ans-login-cart-container{
+    display: flex;
+}
+
+/* #ans-header-right img{
+    margin-top: 3px;
+} */
+
+/* ans-login-cart-container */
+#ans-login-btn {
+    background-color: #fed33c;
+    color: #262626;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+#ans-login-btn:hover{
+    background-color: #ff5c00;
+}
+
+
+
+@media(max-width: 790px) {
+    .ans-hamburger {
+        display: block;
+    }
+    .ans-hamburger.active .ans-bar:nth-child(2) {
+        opacity: 0;
+    }
+    .ans-hamburger.active .ans-bar:nth-child(1) {
+        transition: 0.3s;
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .ans-hamburger.active .ans-bar:nth-child(3) {
+        transition: 0.3s;
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .ans-nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0px;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .ans-nav-item {
+        margin: 16px 0;
+    }
+    .ans-nav-menu.active {
+        left: 0;
+    }
+}
+
+@media(max-width: 540px){
+    #ans-logo-link{
+        display: none;
+    }
+    /* .ans-navbar{
+        justify-content: space-around;
+    } */
+}
