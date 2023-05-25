@@ -1,0 +1,296 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+.container-fluid {
+  padding: 0;
+}
+.card {
+    width: 14rem; /* Adjust the width as per your preference */
+    padding: 0;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0 2px 4px rgba(0, 0, 0, 0.1) 0.3s ease;
+  }
+
+  .card:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 15px;
+  height: 15px;
+  background-size: contain;
+}
+  .carousel-control-prev {
+    left: -50px;
+  }
+
+  .carousel-control-next {
+    right: -50px;
+  }
+
+  #row1221 {
+    margin-top: -1rem;
+  }
+
+  @media (min-width: 768px) {
+    .row-cols-md-3 > * {
+      flex: 0 0 auto;
+      width: 33.3333333333%;
+    }
+  }
+
+  .card-img-top {
+      height: 200px; /* Adjust the height as per your preference */
+      object-fit: cover;
+      transition: transform 0.5s ease;
+      border-radius: 2px;
+  }
+  .card-img-top:hover {
+    transform: scale(1.5);
+  }
+
+  .card-body {
+    padding: 1.25rem;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    text-align: center;
+  }
+  
+  .card-text {
+    color: #6c757d;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #dc3545;
+    color: #fff;
+    transition: #dc3545 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #fff;
+    color: #c82333;
+    transition: background-color 0.6s ease;
+    transform: scale(1.1);
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  
+  .btn:active {
+    transform: translateY(1px);
+  }
+  #topCard1221{
+    text-align: center;
+    /* display: flex;
+    align-items: center; */
+  }
+  .spacebet {
+    margin-top: 1rem;
+  }
+  #restaurantHead121{
+    margin-left: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: -1px;
+  }
+  @media (max-width: 576px) {
+    .heading121,
+    .heading1212 {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .heading121{
+    /* margin-bottom: 9px; */
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  #restaurantHead1212{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-bottom: 17px;
+  }
+  #hrStyle1221{
+    width: 1285px;
+    margin-bottom: 42px;
+  }
+  #sortFrist1221{
+    position: absolute;
+    top: 569px;
+    right: 28rem;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #686b78;
+    cursor: pointer;
+  }
+  #sortFrist12212{
+    position: absolute;
+    top: 569px;
+    right: 28rem;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #686b78;
+    cursor: pointer;
+  }
+  #sortFrist1221:hover{
+    transform: scale(1.1);
+  }
+  #sortFrist12212:hover{
+    transform: scale(1.1);
+  }
+  @media (max-width: 576px) {
+    .card {
+      width: 100%;
+    }
+  
+    #row1221 {
+      margin-top: 3rem;
+    }
+  
+    #sortFrist1221 {
+      position: static;
+      margin-top: 1rem;
+      /* right: initial; */
+      text-align: center;
+    }
+  
+    #hrStyle1221 {
+      /* width: 100%; */
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+  #filterbtn1221{
+    position: absolute;
+    top: 569px;
+    right: 10rem;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #686b78;
+    cursor: pointer;
+  }
+  #filterbtn1221{
+    position: absolute;
+    top: 559px;
+    right: 7rem;
+    padding: 10px;
+    border-radius: 19px;
+  }
+  .search-container {
+    display: flex;
+    align-items: center;
+    max-width: 444px;
+    margin: 0 auto;
+    position: absolute;
+    top: 567px;
+    /* right: 82px; */
+    left: 395px;
+  }
+  #inputSearch1221 {
+    flex: 1;
+    padding: 9px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 18rem;
+    background-color: #77777e3b;
+    border-radius:38px;
+  }
+  #btn-back-to-top {
+    position: fixed;
+    bottom: 42px;
+    right: 10px;
+    display: inline-block;
+    border-radius: 50px;
+    width: 55px;
+    height: 55px;
+}
+.glass-card {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 12px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+}
+
+.glass-card:hover {
+  transform: scale(1.05);
+}
+
+.glass-card .card-img-top {
+  border-radius: 12px;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 20rem;
+}
+/* For a beautiful scroll bar */
+/* Width and height for the scrollbar track */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Background color of the scrollbar track */
+/* Width and height for the scrollbar track */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Background color of the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Styles for the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+/* Hover styles for the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Styles for the scrollbar corner */
+::-webkit-scrollbar-corner {
+  background-color: #f1f1f1;
+}
+
+
+
+  
